@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_NpLLgDxtEeWEDsCSpJRU8A" name="hr">
+  <eAnnotations xmi:id="_NpLLgTxtEeWEDsCSpJRU8A" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_NpLLgjxtEeWEDsCSpJRU8A" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpLLgzxtEeWEDsCSpJRU8A" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NpLLhDxtEeWEDsCSpJRU8A" name="Department">
+    <ownedAttribute xmi:id="_NpLLhTxtEeWEDsCSpJRU8A" name="location" visibility="public" type="_NpLLizxtEeWEDsCSpJRU8A" association="_NpLLiTxtEeWEDsCSpJRU8A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NpLLhjxtEeWEDsCSpJRU8A"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NpLLhzxtEeWEDsCSpJRU8A" name="departmentid" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NpLLiDxtEeWEDsCSpJRU8A" name="departmentName" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NpLLiTxtEeWEDsCSpJRU8A" memberEnd="_NpLLhTxtEeWEDsCSpJRU8A _NpLLijxtEeWEDsCSpJRU8A">
+    <ownedEnd xmi:id="_NpLLijxtEeWEDsCSpJRU8A" visibility="public" type="_NpLLhDxtEeWEDsCSpJRU8A" association="_NpLLiTxtEeWEDsCSpJRU8A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NpLLizxtEeWEDsCSpJRU8A" name="Location">
+    <ownedAttribute xmi:id="_NpLLjDxtEeWEDsCSpJRU8A" name="locationid" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NpLLjTxtEeWEDsCSpJRU8A" name="streetAddress" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NpLLjjxtEeWEDsCSpJRU8A" name="postalCode" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NpLLjzxtEeWEDsCSpJRU8A" name="city" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NpLLkDxtEeWEDsCSpJRU8A" name="stateProvince" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>

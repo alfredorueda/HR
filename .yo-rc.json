@@ -1,0 +1,21 @@
+{
+  "generator-jhipster": {
+    "baseName": "HR",
+    "packageName": "com.hr",
+    "packageFolder": "com/hr",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "enableTranslation": true,
+    "rememberMeKey": "402117c72c5e97a058d771f7b2c83e44c5331ac5"
+  }
+}
