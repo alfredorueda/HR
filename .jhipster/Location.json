@@ -1,0 +1,38 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "department",
+      "relationshipFieldName": "department",
+      "otherEntityName": "department",
+      "relationshipType": "one-to-one",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "location"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "streetAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "stateProvince",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20150806194733",
+  "dto": "no",
+  "pagination": "no"
+}

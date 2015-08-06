@@ -1,0 +1,24 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "location",
+      "relationshipFieldName": "location",
+      "otherEntityName": "location",
+      "relationshipType": "one-to-one",
+      "otherEntityRelationshipName": "department",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "departmentName",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20150806194733",
+  "dto": "no",
+  "pagination": "no"
+}

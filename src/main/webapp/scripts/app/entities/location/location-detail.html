@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="hrApp.location.detail.title">Location</span> {{location.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="hrApp.location.streetAddress">StreetAddress</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{location.streetAddress}}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="hrApp.location.postalCode">PostalCode</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{location.postalCode}}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="hrApp.location.city">City</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{location.city}}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="hrApp.location.stateProvince">StateProvince</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{location.stateProvince}}" readonly>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="location"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
