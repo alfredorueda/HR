@@ -1,11 +1,12 @@
 'use strict';
 
 angular.module('hrApp').controller('LocationDialogController',
-    ['$scope', '$stateParams', '$modalInstance', 'entity', 'Location', 'Department',
-        function($scope, $stateParams, $modalInstance, entity, Location, Department) {
+    ['$scope', '$stateParams', '$modalInstance', 'entity', 'Location', 'Department', 'Country',
+        function ($scope, $stateParams, $modalInstance, entity, Location, Department, Country) {
 
         $scope.location = entity;
         $scope.departments = Department.query();
+            $scope.countrys = Country.query({filter: 'location-is-null'});
         $scope.load = function(id) {
             Location.get({id : id}, function(result) {
                 $scope.location = result;

@@ -16,7 +16,8 @@
             "postalCode": "PostalCode",
             "city": "City",
             "stateProvince": "StateProvince",
-            "department": "department"
+            "department": "department",
+            "country": "country"
         }
     }
 }

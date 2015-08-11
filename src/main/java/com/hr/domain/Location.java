@@ -4,8 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.Objects;
 
 
@@ -21,28 +19,29 @@ public class Location implements Serializable {
     private Long id;
 
 
-    
+
     @Column(name = "street_address")
     private String streetAddress;
 
 
-    
+
     @Column(name = "postal_code")
     private String postalCode;
 
 
-    
     @Column(name = "city")
     private String city;
 
 
-    
     @Column(name = "state_province")
     private String stateProvince;
 
     @OneToOne(mappedBy = "location")
     @JsonIgnore
     private Department department;
+
+    @OneToOne
+    private Country country;
 
     public Long getId() {
         return id;
@@ -90,6 +89,14 @@ public class Location implements Serializable {
 
     public void setDepartment(Department department) {
         this.department = department;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
     }
 
     @Override

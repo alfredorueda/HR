@@ -1,0 +1,33 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "location",
+            "relationshipFieldName": "location",
+            "otherEntityName": "location",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "country"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "region",
+            "relationshipFieldName": "region",
+            "otherEntityName": "region",
+            "relationshipType": "one-to-one",
+            "otherEntityRelationshipName": "country",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "countryName",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20150811185937",
+    "dto": "no",
+    "pagination": "no"
+}

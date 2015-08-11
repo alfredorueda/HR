@@ -8,6 +8,16 @@
       "relationshipType": "one-to-one",
       "ownerSide": false,
       "otherEntityRelationshipName": "location"
+    },
+      {
+          "relationshipId": 2,
+          "relationshipName": "country",
+          "relationshipFieldName": "country",
+          "otherEntityName": "country",
+          "relationshipType": "one-to-one",
+          "otherEntityRelationshipName": "location",
+          "otherEntityField": "id",
+          "ownerSide": true
     }
   ],
   "fields": [

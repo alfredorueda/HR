@@ -15,27 +15,24 @@
     <property name="floatType" value="float" dbms="mysql, oracle"/>
 
     <!--
-        Added the entity Location.
+        Added the entity Country.
     -->
-    <changeSet id="20150806194733" author="jhipster">
-        <createTable tableName="LOCATION">
-            <column name="id" type="bigint" autoIncrement="${autoIncrement}" >
+    <changeSet id="20150811185937" author="jhipster">
+        <createTable tableName="COUNTRY">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="street_address" type="varchar(255)"/>
-            <column name="postal_code" type="varchar(255)"/>
-            <column name="city" type="varchar(255)"/>
-            <column name="state_province" type="varchar(255)"/>
-            <column name="country_id" type="bigint">
+            <column name="country_name" type="varchar(255)"/>
+            <column name="region_id" type="bigint">
                 <constraints unique="true"/>
             </column>
         </createTable>
 
-        <addForeignKeyConstraint baseColumnNames="country_id"
-                                 baseTableName="LOCATION"
-                                 constraintName="fk_location_country_id"
+        <addForeignKeyConstraint baseColumnNames="region_id"
+                                 baseTableName="COUNTRY"
+                                 constraintName="fk_country_region_id"
                                  referencedColumnNames="id"
-                                 referencedTableName="COUNTRY"/>
+                                 referencedTableName="REGION"/>
 
     </changeSet>
 </databaseChangeLog>

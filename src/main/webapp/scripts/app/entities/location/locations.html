@@ -46,6 +46,7 @@
                     <th translate="hrApp.location.postalCode">PostalCode</th>
                     <th translate="hrApp.location.city">City</th>
                     <th translate="hrApp.location.stateProvince">StateProvince</th>
+                    <th translate="hrApp.location.country">country</th>
                     <th></th>
                 </tr>
             </thead>
@@ -56,6 +57,7 @@
                     <td>{{location.postalCode}}</td>
                     <td>{{location.city}}</td>
                     <td>{{location.stateProvince}}</td>
+                    <td>{{location.country.id}}</td>
                     <td>
                         <button type="submit"
                                 ui-sref="location.detail({id:location.id})"

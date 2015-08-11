@@ -1,0 +1,23 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "country",
+            "relationshipFieldName": "country",
+            "otherEntityName": "country",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "region"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "regionName",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20150811185937",
+    "dto": "no",
+    "pagination": "no"
+}
