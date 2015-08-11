@@ -1,0 +1,86 @@
+<div>
+    <h2><span translate="hrApp.employee.detail.title">Employee</span> {{employee.id}}</h2>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="hrApp.employee.firstName">FirstName</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{employee.firstName}}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="hrApp.employee.lastName">LastName</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{employee.lastName}}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="hrApp.employee.email">Email</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{employee.email}}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="hrApp.employee.phoneNumber">PhoneNumber</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{employee.phoneNumber}}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="hrApp.employee.hireDate">HireDate</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{employee.hireDate}}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="hrApp.employee.salary">Salary</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{employee.salary}}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="hrApp.employee.comissionPct">ComissionPct</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{employee.comissionPct}}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="hrApp.employee.department">department</span>
+                </td>
+                <td>
+                    <input type="text" class="input-sm form-control" value="{{employee.department.id}}" readonly>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="employee"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

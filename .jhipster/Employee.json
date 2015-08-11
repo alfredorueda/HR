@@ -1,0 +1,54 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "department",
+            "relationshipFieldName": "department",
+            "otherEntityName": "department",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "phoneNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "hireDate",
+            "fieldType": "DateTime"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "salary",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "comissionPct",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20150811170119",
+    "dto": "no",
+    "pagination": "no",
+    "fieldsContainDateTime": true,
+    "fieldsContainCustomTime": true
+}

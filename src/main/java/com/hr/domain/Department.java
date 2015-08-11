@@ -1,11 +1,12 @@
 package com.hr.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
-import java.util.Set;
 import java.util.Objects;
+import java.util.Set;
 
 
 /**
@@ -20,12 +21,16 @@ public class Department implements Serializable {
     private Long id;
 
 
-    
+
     @Column(name = "department_name")
     private String departmentName;
 
     @OneToOne
     private Location location;
+
+    @OneToMany(mappedBy = "department")
+    @JsonIgnore
+    private Set<Employee> employees = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -49,6 +54,14 @@ public class Department implements Serializable {
 
     public void setLocation(Location location) {
         this.location = location;
+    }
+
+    public Set<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(Set<Employee> employees) {
+        this.employees = employees;
     }
 
     @Override

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('hrApp')
-    .controller('DepartmentDetailController', function ($scope, $rootScope, $stateParams, entity, Department, Location) {
+    .controller('DepartmentDetailController', function ($scope, $rootScope, $stateParams, entity, Department, Location, Employee) {
         $scope.department = entity;
         $scope.load = function (id) {
             Department.get({id: id}, function(result) {

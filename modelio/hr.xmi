@@ -1,33 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_8ybzsDxzEeWEDsCSpJRU8A" name="hr">
-  <eAnnotations xmi:id="_8ybzsTxzEeWEDsCSpJRU8A" source="Objing">
-    <contents xmi:type="uml:Property" xmi:id="_8ybzsjxzEeWEDsCSpJRU8A" name="exporterVersion">
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_8ybzszxzEeWEDsCSpJRU8A" value="3.0.0"/>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_j9l5YEBKEeWsssoQRbfhSQ" name="hr">
+  <eAnnotations xmi:id="_j9l5YUBKEeWsssoQRbfhSQ" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_j9l5YkBKEeWsssoQRbfhSQ" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_j9l5Y0BKEeWsssoQRbfhSQ" value="3.0.0"/>
     </contents>
   </eAnnotations>
-  <packagedElement xmi:type="uml:Class" xmi:id="_8ybztDxzEeWEDsCSpJRU8A" name="Department">
-    <ownedAttribute xmi:id="_8ybztTxzEeWEDsCSpJRU8A" name="location" visibility="public" type="_8ybzujxzEeWEDsCSpJRU8A" aggregation="composite" association="_8ybzuDxzEeWEDsCSpJRU8A">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ybztjxzEeWEDsCSpJRU8A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_j9l5ZEBKEeWsssoQRbfhSQ" name="Department">
+    <ownedAttribute xmi:id="_j9l5ZUBKEeWsssoQRbfhSQ" name="location" visibility="public" type="_j9l5cEBKEeWsssoQRbfhSQ" aggregation="composite" association="_j9l5a0BKEeWsssoQRbfhSQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j9l5ZkBKEeWsssoQRbfhSQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_8ybztzxzEeWEDsCSpJRU8A" name="departmentName" visibility="private" isUnique="false">
+    <ownedAttribute xmi:id="_j9l5Z0BKEeWsssoQRbfhSQ" name="employee" visibility="private" type="_j9l5dUBKEeWsssoQRbfhSQ" aggregation="shared" association="_j9l5bUBKEeWsssoQRbfhSQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j9l5aEBKEeWsssoQRbfhSQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j9l5aUBKEeWsssoQRbfhSQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_j9l5akBKEeWsssoQRbfhSQ" name="departmentName" visibility="private" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_8ybzuDxzEeWEDsCSpJRU8A" memberEnd="_8ybztTxzEeWEDsCSpJRU8A _8ybzuTxzEeWEDsCSpJRU8A">
-    <ownedEnd xmi:id="_8ybzuTxzEeWEDsCSpJRU8A" visibility="public" type="_8ybztDxzEeWEDsCSpJRU8A" association="_8ybzuDxzEeWEDsCSpJRU8A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_j9l5a0BKEeWsssoQRbfhSQ" memberEnd="_j9l5ZUBKEeWsssoQRbfhSQ _j9l5bEBKEeWsssoQRbfhSQ">
+    <ownedEnd xmi:id="_j9l5bEBKEeWsssoQRbfhSQ" visibility="public" type="_j9l5ZEBKEeWsssoQRbfhSQ" association="_j9l5a0BKEeWsssoQRbfhSQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_8ybzujxzEeWEDsCSpJRU8A" name="Location">
-    <ownedAttribute xmi:id="_8ybzuzxzEeWEDsCSpJRU8A" name="streetAddress" visibility="private" isUnique="false">
+  <packagedElement xmi:type="uml:Association" xmi:id="_j9l5bUBKEeWsssoQRbfhSQ" memberEnd="_j9l5Z0BKEeWsssoQRbfhSQ _j9l5bkBKEeWsssoQRbfhSQ">
+    <ownedEnd xmi:id="_j9l5bkBKEeWsssoQRbfhSQ" visibility="public" type="_j9l5ZEBKEeWsssoQRbfhSQ" association="_j9l5bUBKEeWsssoQRbfhSQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j9l5b0BKEeWsssoQRbfhSQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_j9l5cEBKEeWsssoQRbfhSQ" name="Location">
+    <ownedAttribute xmi:id="_j9l5cUBKEeWsssoQRbfhSQ" name="streetAddress" visibility="private" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_8ybzvDxzEeWEDsCSpJRU8A" name="postalCode" visibility="private" isUnique="false">
+    <ownedAttribute xmi:id="_j9l5ckBKEeWsssoQRbfhSQ" name="postalCode" visibility="private" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_8ycawDxzEeWEDsCSpJRU8A" name="city" visibility="private" isUnique="false">
+    <ownedAttribute xmi:id="_j9l5c0BKEeWsssoQRbfhSQ" name="city" visibility="private" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_8ycawTxzEeWEDsCSpJRU8A" name="stateProvince" visibility="private" isUnique="false">
+    <ownedAttribute xmi:id="_j9l5dEBKEeWsssoQRbfhSQ" name="stateProvince" visibility="private" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_j9l5dUBKEeWsssoQRbfhSQ" name="Employee">
+    <ownedAttribute xmi:id="_j9l5dkBKEeWsssoQRbfhSQ" name="firstName" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_j9l5d0BKEeWsssoQRbfhSQ" name="lastName" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_j9l5eEBKEeWsssoQRbfhSQ" name="email" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_j9l5eUBKEeWsssoQRbfhSQ" name="phoneNumber" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_j9l5ekBKEeWsssoQRbfhSQ" name="hireDate" visibility="private" type="_j9l5fkBKEeWsssoQRbfhSQ" isUnique="false">
+      <ownedComment xmi:id="_j9l5e0BKEeWsssoQRbfhSQ">
+        <body></body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_j9l5fEBKEeWsssoQRbfhSQ" name="salary" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_j9l5fUBKEeWsssoQRbfhSQ" name="comissionPct" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_j9l5fkBKEeWsssoQRbfhSQ" name="dateTime"/>
 </uml:Model>

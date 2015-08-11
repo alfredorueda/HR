@@ -9,6 +9,14 @@
       "otherEntityRelationshipName": "department",
       "otherEntityField": "id",
       "ownerSide": true
+    },
+      {
+          "relationshipId": 2,
+          "relationshipName": "employee",
+          "relationshipFieldName": "employee",
+          "otherEntityName": "employee",
+          "relationshipType": "one-to-many",
+          "otherEntityRelationshipName": "department"
     }
   ],
   "fields": [
